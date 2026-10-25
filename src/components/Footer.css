@@ -1,0 +1,448 @@
+/* =====================================================
+   AURAMART PROFESSIONAL FOOTER
+===================================================== */
+
+.auramart-footer {
+  width: 100%;
+  background: #0b1220;
+  color: #cbd5e1;
+  margin-top: 70px;
+}
+
+
+/* =====================================================
+   TRUST FEATURES
+===================================================== */
+
+.footer-trust {
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+  padding: 30px 6%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-bottom: 1px solid #1e293b;
+}
+
+.trust-box {
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 5px 28px;
+
+  border-right: 1px solid #1e293b;
+}
+
+.trust-box:first-child {
+  padding-left: 0;
+}
+
+.trust-box:last-child {
+  border-right: none;
+}
+
+
+/* Icon */
+
+.trust-icon {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #111c31;
+
+  border: 1px solid #263752;
+
+  color: #60a5fa;
+
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+.trust-box h3 {
+  margin: 0 0 4px;
+
+  color: #f8fafc;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+
+.trust-box p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+
+  line-height: 1.4;
+}
+
+
+/* =====================================================
+   MAIN FOOTER CONTENT
+===================================================== */
+
+.footer-content {
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  padding: 48px 6%;
+
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 65px;
+}
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.footer-brand {
+  max-width: 350px;
+}
+
+
+.footer-brand-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  text-decoration: none;
+
+  margin-bottom: 15px;
+}
+
+
+.footer-logo {
+  width: 38px;
+  height: 38px;
+
+  object-fit: contain;
+
+  display: block;
+}
+
+
+.footer-brand-name {
+  display: flex;
+  align-items: center;
+
+  font-size: 21px;
+  font-weight: 800;
+
+  letter-spacing: -0.5px;
+}
+
+
+.footer-brand-name span {
+  color: #38bdf8;
+}
+
+
+.footer-brand-name strong {
+  color: #f8fafc;
+}
+
+
+.footer-brand > p {
+  margin: 0;
+
+  max-width: 330px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =====================================================
+   SOCIAL LINKS
+===================================================== */
+
+.social-links {
+  display: flex;
+
+  gap: 9px;
+
+  margin-top: 20px;
+}
+
+
+.social-links a {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #111c31;
+
+  border: 1px solid #263752;
+
+  color: #cbd5e1;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+
+.social-links a:hover {
+  background: #2563eb;
+
+  border-color: #2563eb;
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   FOOTER COLUMNS
+===================================================== */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+
+  gap: 11px;
+}
+
+
+.footer-column h4 {
+  margin: 0 0 8px;
+
+  color: #f8fafc;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.footer-column a {
+  width: fit-content;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition: all 0.2s ease;
+}
+
+
+.footer-column a:hover {
+  color: #60a5fa;
+
+  transform: translateX(3px);
+}
+
+
+/* =====================================================
+   BOTTOM BAR
+===================================================== */
+
+.footer-bottom {
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+
+  padding: 18px 6%;
+
+  border-top: 1px solid #1e293b;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.footer-bottom p {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+}
+
+
+.footer-legal {
+  display: flex;
+
+  gap: 25px;
+}
+
+
+.footer-legal a {
+  color: #64748b;
+
+  font-size: 12px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+
+.footer-legal a:hover {
+  color: #94a3b8;
+}
+
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .auramart-footer {
+  background: #080d18;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+  .footer-trust {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0;
+  }
+
+  .trust-box {
+    padding: 15px 20px;
+
+    border-right: none;
+  }
+
+  .trust-box:first-child {
+    padding-left: 20px;
+  }
+
+  .trust-box:nth-child(1),
+  .trust-box:nth-child(2) {
+    border-bottom: 1px solid #1e293b;
+  }
+
+
+  .footer-content {
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+
+    max-width: 500px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+  .footer-trust {
+    grid-template-columns: 1fr;
+
+    padding: 20px 6%;
+  }
+
+  .trust-box {
+    padding: 14px 0;
+
+    border-bottom: 1px solid #1e293b;
+  }
+
+  .trust-box:first-child {
+    padding-left: 0;
+  }
+
+  .trust-box:last-child {
+    border-bottom: none;
+  }
+
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+
+    padding: 40px 6%;
+
+    gap: 35px 25px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+
+  .footer-bottom {
+    padding: 18px 6%;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+    text-align: center;
+  }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 430px) {
+
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-legal {
+    gap: 15px;
+  }
+}

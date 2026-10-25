@@ -1,0 +1,324 @@
+/* ==========================================
+   AURAMART GLOBAL NAVBAR
+========================================== */
+
+.navbar {
+  width: 100%;
+  height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  background: #ffffff;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ==========================================
+   LOGO / BRAND
+========================================== */
+
+.navbar .brand {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  text-decoration: none;
+
+  flex-shrink: 0;
+}
+
+.navbar .brand-logo {
+  width: 42px !important;
+  height: 42px !important;
+
+  max-width: 42px !important;
+  max-height: 42px !important;
+
+  object-fit: contain !important;
+
+  display: block;
+}
+
+.navbar .brand-name {
+  display: flex;
+  align-items: center;
+
+  font-size: 21px;
+  font-weight: 800;
+
+  line-height: 1;
+
+  letter-spacing: -0.5px;
+}
+
+.navbar .brand-aura {
+  color: #111827;
+}
+
+.navbar .brand-mart {
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   NAV LINKS
+========================================== */
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 27px;
+}
+
+.navbar .nav-links a {
+  color: #475569;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #2563eb;
+}
+
+
+/* ==========================================
+   CART
+========================================== */
+
+.navbar .cart-link {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.navbar .cart-count {
+  position: absolute;
+
+  top: -12px;
+  right: -14px;
+
+  min-width: 19px;
+  height: 19px;
+
+  padding: 0 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50px;
+
+  background: #ef4444;
+  color: white;
+
+  font-size: 10px;
+  font-weight: 700;
+}
+
+
+/* ==========================================
+   LOGIN
+========================================== */
+
+.navbar .login-btn {
+  padding: 10px 19px;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white !important;
+
+  font-size: 14px !important;
+  font-weight: 600 !important;
+
+  transition: all 0.2s ease !important;
+}
+
+.navbar .login-btn:hover {
+  background: #1d4ed8;
+
+  transform: translateY(-1px);
+
+  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ==========================================
+   USER
+========================================== */
+
+.navbar .welcome-user {
+  color: #475569;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* ==========================================
+   LOGOUT
+========================================== */
+
+.navbar .logout-btn {
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  background: #ef4444;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.navbar .logout-btn:hover {
+  background: #dc2626;
+
+  transform: translateY(-1px);
+}
+
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark-mode .navbar {
+  background: #111827;
+
+  border-bottom-color: #1e293b;
+}
+
+body.dark-mode .navbar .brand-aura {
+  color: #f8fafc;
+}
+
+body.dark-mode .navbar .brand-mart {
+  color: #60a5fa;
+}
+
+body.dark-mode .navbar .nav-links a {
+  color: #cbd5e1;
+}
+
+body.dark-mode .navbar .nav-links a:hover {
+  color: #60a5fa;
+}
+
+body.dark-mode .navbar .welcome-user {
+  color: #cbd5e1;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .navbar .nav-links {
+    gap: 18px;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+  .navbar {
+    height: 66px;
+
+    padding: 0 4%;
+  }
+
+  .navbar .brand-logo {
+    width: 36px !important;
+    height: 36px !important;
+
+    max-width: 36px !important;
+    max-height: 36px !important;
+  }
+
+  .navbar .brand-name {
+    font-size: 18px;
+  }
+
+  .navbar .nav-links {
+    gap: 12px;
+  }
+
+  .navbar .nav-links a {
+    font-size: 12px;
+  }
+
+  .navbar .login-btn {
+    padding: 8px 13px;
+  }
+
+  .navbar .welcome-user {
+    display: none;
+  }
+}
+
+
+/* ==========================================
+   VERY SMALL SCREEN
+========================================== */
+
+@media (max-width: 480px) {
+
+  .navbar .brand-name {
+    display: none;
+  }
+
+  .navbar .nav-links {
+    gap: 9px;
+  }
+
+  .navbar .nav-links a {
+    font-size: 11px;
+  }
+
+  .navbar .cart-link {
+    font-size: 11px;
+  }
+}
