@@ -1,67 +1,51 @@
-/* ==========================================
-   AURAMART GLOBAL NAVBAR
-========================================== */
+
+/* =========================
+   AURAMART RESPONSIVE NAVBAR
+========================= */
 
 .navbar {
   width: 100%;
-  height: 72px;
-
+  min-height: 72px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 0 6%;
+  gap: 16px;
+  padding: 0 5%;
 
   background: #ffffff;
-
   border-bottom: 1px solid #e5e7eb;
-
   position: sticky;
   top: 0;
   z-index: 9999;
-
   box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-/* ==========================================
-   LOGO / BRAND
-========================================== */
+/* BRAND */
 
 .navbar .brand {
   display: flex;
   align-items: center;
-
-  gap: 9px;
-
+  gap: 8px;
   text-decoration: none;
-
   flex-shrink: 0;
 }
 
 .navbar .brand-logo {
   width: 42px !important;
   height: 42px !important;
-
   max-width: 42px !important;
   max-height: 42px !important;
-
   object-fit: contain !important;
-
   display: block;
 }
 
 .navbar .brand-name {
   display: flex;
   align-items: center;
-
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
-
   line-height: 1;
-
   letter-spacing: -0.5px;
 }
 
@@ -73,28 +57,22 @@
   color: #2563eb;
 }
 
-
-/* ==========================================
-   NAV LINKS
-========================================== */
+/* LINKS */
 
 .navbar .nav-links {
   display: flex;
   align-items: center;
-
-  gap: 27px;
+  justify-content: flex-end;
+  gap: 22px;
+  min-width: 0;
 }
 
 .navbar .nav-links a {
   color: #475569;
-
   font-size: 14px;
   font-weight: 600;
-
   text-decoration: none;
-
   white-space: nowrap;
-
   transition: color 0.2s ease;
 }
 
@@ -102,121 +80,75 @@
   color: #2563eb;
 }
 
-
-/* ==========================================
-   CART
-========================================== */
+/* CART */
 
 .navbar .cart-link {
   position: relative;
-
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .navbar .cart-count {
   position: absolute;
-
-  top: -12px;
-  right: -14px;
-
-  min-width: 19px;
-  height: 19px;
-
-  padding: 0 5px;
+  top: -10px;
+  right: -12px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 4px;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
   border-radius: 50px;
-
   background: #ef4444;
   color: white;
-
   font-size: 10px;
   font-weight: 700;
 }
 
-
-/* ==========================================
-   LOGIN
-========================================== */
+/* LOGIN */
 
 .navbar .login-btn {
-  padding: 10px 19px;
-
+  padding: 10px 18px;
   border-radius: 8px;
-
   background: #2563eb;
-
   color: white !important;
-
   font-size: 14px !important;
   font-weight: 600 !important;
-
-  transition: all 0.2s ease !important;
+  transition: all 0.2s ease;
 }
 
 .navbar .login-btn:hover {
   background: #1d4ed8;
-
   transform: translateY(-1px);
-
-  box-shadow: 0 5px 14px rgba(37, 99, 235, 0.25);
 }
 
-
-/* ==========================================
-   USER
-========================================== */
+/* USER */
 
 .navbar .welcome-user {
   color: #475569;
-
   font-size: 14px;
   font-weight: 600;
-
   white-space: nowrap;
 }
 
-
-/* ==========================================
-   LOGOUT
-========================================== */
-
 .navbar .logout-btn {
   border: none;
-
-  padding: 10px 18px;
-
+  padding: 9px 15px;
   border-radius: 8px;
-
   background: #ef4444;
   color: white;
-
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-
   cursor: pointer;
-
-  transition: all 0.2s ease;
 }
 
-.navbar .logout-btn:hover {
-  background: #dc2626;
-
-  transform: translateY(-1px);
-}
-
-
-/* ==========================================
-   DARK MODE
-========================================== */
+/* DARK MODE */
 
 body.dark-mode .navbar {
   background: #111827;
-
   border-bottom-color: #1e293b;
 }
 
@@ -240,46 +172,41 @@ body.dark-mode .navbar .welcome-user {
   color: #cbd5e1;
 }
 
-
-/* ==========================================
-   TABLET
-========================================== */
+/* TABLET */
 
 @media (max-width: 900px) {
-
   .navbar {
-    padding: 0 4%;
+    padding: 0 3%;
+    gap: 10px;
   }
 
   .navbar .nav-links {
-    gap: 18px;
-  }
-
-}
-
-
-/* ==========================================
-   MOBILE
-========================================== */
-
-@media (max-width: 650px) {
-
-  .navbar {
-    height: 66px;
-
-    padding: 0 4%;
-  }
-
-  .navbar .brand-logo {
-    width: 36px !important;
-    height: 36px !important;
-
-    max-width: 36px !important;
-    max-height: 36px !important;
+    gap: 15px;
   }
 
   .navbar .brand-name {
     font-size: 18px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .navbar {
+    min-height: 64px;
+    padding: 0 12px;
+    gap: 8px;
+  }
+
+  .navbar .brand-logo {
+    width: 34px !important;
+    height: 34px !important;
+    max-width: 34px !important;
+    max-height: 34px !important;
+  }
+
+  .navbar .brand-name {
+    display: none;
   }
 
   .navbar .nav-links {
@@ -291,34 +218,47 @@ body.dark-mode .navbar .welcome-user {
   }
 
   .navbar .login-btn {
-    padding: 8px 13px;
+    padding: 8px 12px;
   }
 
   .navbar .welcome-user {
     display: none;
   }
+
+  .navbar .logout-btn {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
 }
 
+/* SMALL MOBILE */
 
-/* ==========================================
-   VERY SMALL SCREEN
-========================================== */
+@media (max-width: 380px) {
+  .navbar {
+    padding: 0 8px;
+    gap: 5px;
+  }
 
-@media (max-width: 480px) {
-
-  .navbar .brand-name {
-    display: none;
+  .navbar .brand-logo {
+    width: 30px !important;
+    height: 30px !important;
+    max-width: 30px !important;
+    max-height: 30px !important;
   }
 
   .navbar .nav-links {
-    gap: 9px;
+    gap: 8px;
   }
 
   .navbar .nav-links a {
     font-size: 11px;
   }
 
-  .navbar .cart-link {
-    font-size: 11px;
+  .navbar .login-btn {
+    padding: 7px 9px;
+  }
+
+  .navbar .logout-btn {
+    padding: 6px 8px;
   }
 }
